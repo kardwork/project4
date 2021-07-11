@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vanilla JS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<link rel="stylesheet" type="text/css" href="Vanillajs.css">
+</head>
+<body>
+	<div class = "logo">
+		<img src="avatar.jpg">
+		<!---linear-gradient(235deg, #772aff, #010615, #2196F3)---->
+		<h4 style="font-size: 20px;color: #2196F3;">Đoàn Nguyễn Gia Bảo</h4>
+		<h4 style="color: #2196F3;color: #fff;padding-bottom: 5px;">Musicaholic<br>Chàng kĩ sư chơi nhạc</h4>
+	</div>
+	
+	<audio id="myAudio">
+	 	<source src="Track.mp3" type="audio/mpeg">
+	  		Your browser does not support the audio element.
+	</audio>
+	<button onclick="playAudio()">Play Music</button>
+	
+	<script>
+		var x = document.getElementById("myAudio"); 
+
+		function playAudio() { 
+  			x.play(); 
+		} 
+	</script>
+	<div class = "container">
+		<div class = "box">
+			<h2 class = "name">FaceBook</h2>
+			<a href="#" class="buy">Click!</a>
+			<div class = "circle"></div>
+			<img src="back.png" class= "product">
+		</div>
+		<div class = "box">
+			<h2 class = "name">Instagram</h2>
+			<a href="#" class="buy">Click!</a>
+			<div class = "circle"></div>
+			<img src="back.png" class= "product">
+		</div>
+		<div class = "box">
+			<h2 class = "name">Email</h2>
+			<a href="#" class="buy">Click!</a>
+			<div class = "circle"></div>
+			<img src="back.png" class= "product">
+		</div>
+	</div>
+	<script src="vanilla-tilt.min.js"></script>
+	<script type="text/javascript">
+		VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+	</script>
+</body>
+</html>
